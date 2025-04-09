@@ -15,7 +15,7 @@ This repository contains the implementation and results of the Rough Volatility 
 
 We simulate the variance process in the Lifted Heston model and estimate the Hurst parameter \( H \) using a two-step regression on log-increments of log-variance. Estimation is benchmarked against:
 
-- Brownian motion (benchmark: \( H = 0.5 \))
+- Brownian motion (benchmark: $H = 0.5$)
 - Fractional Brownian motion (benchmark: \( H = 0.1 \))
 
 For each case, subsampling effects on the estimation accuracy are investigated.
