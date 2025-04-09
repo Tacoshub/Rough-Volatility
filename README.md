@@ -2,13 +2,6 @@
 
 This repository contains the implementation and results of the Rough Volatility Project, focusing on simulation, estimation, and pricing within the Lifted Heston and Lifted Bergomi models. The work explores volatility modeling with a special emphasis on the approximation of rough volatility using finite-dimensional Markovian models.
 
-## Authors
-
-- Flavio Boccia  
-- Ludovico Costa  
-- Alessandro Pigato  
-- Lorenzo Tolomelli
-
 ## Contents
 
 ### 1. Estimation of the Hurst Parameter
@@ -44,3 +37,10 @@ A multi-factor approximation of the rough Bergomi model is implemented. Monte Ca
 - **Fourier Pricing**: Carr-Madan formula using characteristic functions
 - **Multi-Factor Approximation**: Kernel fitting via Laplace transforms
 - **Monte Carlo Simulation**: Used for Lifted Bergomi pricing
+
+## Authors
+
+- Flavio Boccia  
+- Ludovico Costa  
+- Alessandro Pigato  
+- Lorenzo Tolomelli
