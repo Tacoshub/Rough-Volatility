@@ -9,8 +9,6 @@ This repository contains the implementation and results of the Rough Volatility 
 - Alessandro Pigato  
 - Lorenzo Tolomelli
 
----
-
 ## Contents
 
 ### 1. Estimation of the Hurst Parameter
@@ -38,8 +36,6 @@ A multi-factor approximation of the rough Bergomi model is implemented. Monte Ca
 - Calibration of the classical Heston model to SPX call options
 - Comparison with the Lifted Heston model on the same dataset
 - Assessment of fit quality both in prices and implied volatilities
-
----
 
 ## Notable Techniques and Concepts
 
