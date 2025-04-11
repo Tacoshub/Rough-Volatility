@@ -22,8 +22,6 @@ We also study the impact of subsampling on the estimation procedure.
 - Numerical solution of Riccati ODEs for the characteristic function
 - Generation of implied volatility smiles across different numbers of factors and maturities
 
----
-
 ### 3. Implied Volatility in the Lifted Bergomi Model
 
 A multi-factor approximation of the rough Bergomi model is implemented. Call prices and implied volatilities are computed using Monte Carlo simulation, investigating the effect of the number of factors on the accuracy of the smile.
