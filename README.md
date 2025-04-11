@@ -1,42 +1,55 @@
 # Rough Volatility Project (2025)
 
-This repository contains the implementation and results of the Rough Volatility Project, focusing on simulation, estimation, and pricing within the Lifted Heston and Lifted Bergomi models. The work explores volatility modeling with a special emphasis on the approximation of rough volatility using finite-dimensional Markovian models.
+This repository contains the implementation and numerical results of a project on rough volatility models, with a particular focus on simulation, estimation, pricing, and calibration techniques for the Lifted Heston and Lifted Bergomi models.
+
+The project investigates the approximation of rough volatility dynamics using finite-dimensional Markovian systems, enabling efficient numerical methods for option pricing and model calibration.
+
+---
 
 ## Contents
 
 ### 1. Estimation of the Hurst Parameter
 
-We simulate the variance process in the Lifted Heston model and estimate the Hurst parameter $H$ using a two-step regression on log-increments of log-variance. Estimation is benchmarked against:
+We simulate the variance process in the Lifted Heston model and estimate the Hurst parameter $H$ using a regression-based method on log-increments of log-variance. Estimation accuracy is assessed for:
 
-- Brownian motion (benchmark: $H = 0.5$)
-- Fractional Brownian motion (benchmark: $H = 0.1$)
+- Brownian motion ($H = 0.5$)
+- Fractional Brownian motion ($H = 0.1$)
 
-For each case, subsampling effects on the estimation accuracy are investigated.
+We also study the impact of subsampling on the estimation procedure.
+
+---
 
 ### 2. Implied Volatility in the Lifted Heston Model
 
-- Derivation of the moment generating function $M_t$
-- Carr-Madan pricing formula implementation
-- Fourier-based pricing via characteristic function approximated through Riccati ODEs
-- Smile generation for different factor counts $n$ and maturities
+- Derivation of the moment generating function
+- Fourier-based pricing via the Carr-Madan formula
+- Numerical solution of Riccati ODEs for the characteristic function
+- Generation of implied volatility smiles across different numbers of factors and maturities
+
+---
 
 ### 3. Implied Volatility in the Lifted Bergomi Model
 
-A multi-factor approximation of the rough Bergomi model is implemented. Monte Carlo simulations are used to compute call prices and implied volatilities.
+A multi-factor approximation of the rough Bergomi model is implemented. Call prices and implied volatilities are computed using Monte Carlo simulation, investigating the effect of the number of factors on the accuracy of the smile.
+
+---
 
 ### 4. Model Calibration
 
-- Calibration of the classical Heston model to SPX call options
-- Comparison with the Lifted Heston model on the same dataset
-- Assessment of fit quality both in prices and implied volatilities
+We perform a calibration of both the classical Heston model and the Lifted Heston model to SPX option data. The fit quality is evaluated in terms of both option prices and implied volatilities.
 
-## Notable Techniques and Concepts
+---
 
-- **Lifted Heston Model**: Markovian approximation of the rough Heston model
-- **Hurst Estimation**: Regression on structure functions of log-variance increments
-- **Fourier Pricing**: Carr-Madan formula using characteristic functions
-- **Multi-Factor Approximation**: Kernel fitting via Laplace transforms
-- **Monte Carlo Simulation**: Used for Lifted Bergomi pricing
+## Main Techniques
+
+- Simulation of variance processes using implicit-explicit Euler schemes
+- Estimation of roughness via structure functions of log-variance increments
+- Fourier pricing methods based on characteristic functions
+- Multi-factor kernel approximation of rough volatility models
+- Monte Carlo methods for option pricing
+- Calibration procedures for volatility models
+
+---
 
 ## Authors
 
