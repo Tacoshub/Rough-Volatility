@@ -4,8 +4,6 @@ This repository contains the implementation and numerical results of a project o
 
 The project investigates the approximation of rough volatility dynamics using finite-dimensional Markovian systems, enabling efficient numerical methods for option pricing and model calibration.
 
----
-
 ## Contents
 
 ### 1. Estimation of the Hurst Parameter
@@ -16,8 +14,6 @@ We simulate the variance process in the Lifted Heston model and estimate the Hur
 - Fractional Brownian motion ($H = 0.1$)
 
 We also study the impact of subsampling on the estimation procedure.
-
----
 
 ### 2. Implied Volatility in the Lifted Heston Model
 
@@ -32,13 +28,9 @@ We also study the impact of subsampling on the estimation procedure.
 
 A multi-factor approximation of the rough Bergomi model is implemented. Call prices and implied volatilities are computed using Monte Carlo simulation, investigating the effect of the number of factors on the accuracy of the smile.
 
----
-
 ### 4. Model Calibration
 
 We perform a calibration of both the classical Heston model and the Lifted Heston model to SPX option data. The fit quality is evaluated in terms of both option prices and implied volatilities.
-
----
 
 ## Main Techniques
 
@@ -48,8 +40,6 @@ We perform a calibration of both the classical Heston model and the Lifted Hesto
 - Multi-factor kernel approximation of rough volatility models
 - Monte Carlo methods for option pricing
 - Calibration procedures for volatility models
-
----
 
 ## Authors
 
